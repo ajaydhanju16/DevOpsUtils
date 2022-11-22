@@ -26,65 +26,6 @@
 		<project.dynamic.version>3.0.${BuildNumber}</project.dynamic.version>
 	</properties>
 
-	<repositories>
-		<!-- common CVS maven repository for all projects to share, need to change it to the new cvs repository -->
-		<repository>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-				<checksumPolicy>warn</checksumPolicy>
-			</releases>
-			<id>SiemensRepo</id>
-			<url>https://itbuild.industrysoftware.automation.siemens.com/repository/maven-repo-2.1/</url>
-			<layout>default</layout>
-		</repository>
-	</repositories>
-
-	<pluginRepositories>
-		<pluginRepository>
-			<id>SiemensRepo</id>
-			<url>https://itbuild.industrysoftware.automation.siemens.com/repository/maven-repo-2.1/</url>
-		</pluginRepository>
-	</pluginRepositories>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jdbc</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
-		<dependency>
-		    <groupId>org.junit.jupiter</groupId>
-		    <artifactId>junit-jupiter-engine</artifactId>
-		    <version>5.0.0</version>
-		    <scope>test</scope>
-		</dependency>
-		<dependency>
-		<groupId>org.junit.vintage</groupId>
-			<artifactId>junit-vintage-engine</artifactId>
-			<version>4.12.1</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-launcher</artifactId>
-			<version>1.0.1</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-		<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-runner</artifactId>
-			<version>1.0.1</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-
 	<build>
 		<plugins>
 			<!-- Make a replacement of a Maven Property via Groovy Maven Plugin as workaround -->
@@ -189,3 +130,4 @@
 	</build>
 
 </project>
+
