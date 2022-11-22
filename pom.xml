@@ -23,7 +23,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>11</java.version>
-		<project.dynamic.version>3.0.${bambooBuildNumber}</project.dynamic.version>
+		<project.dynamic.version>3.0.${BuildNumber}</project.dynamic.version>
 	</properties>
 
 	<repositories>
@@ -35,7 +35,7 @@
 				<checksumPolicy>warn</checksumPolicy>
 			</releases>
 			<id>SiemensRepo</id>
-			<url>https://itbuild.industrysoftware.automation.siemens.com/bamboo/repository/maven-repo-2.1/</url>
+			<url>https://itbuild.industrysoftware.automation.siemens.com/repository/maven-repo-2.1/</url>
 			<layout>default</layout>
 		</repository>
 	</repositories>
@@ -43,7 +43,7 @@
 	<pluginRepositories>
 		<pluginRepository>
 			<id>SiemensRepo</id>
-			<url>https://itbuild.industrysoftware.automation.siemens.com/bamboo/repository/maven-repo-2.1/</url>
+			<url>https://itbuild.industrysoftware.automation.siemens.com/repository/maven-repo-2.1/</url>
 		</pluginRepository>
 	</pluginRepositories>
 
@@ -189,4 +189,3 @@
 	</build>
 
 </project>
-
